@@ -1,0 +1,123 @@
+.checkoutModal {
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 500px;
+  height: 375px;
+  background: #fff;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 100;
+}
+.closeBtn {
+  position: relative;
+  top: 60px;
+  left: 220px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.title {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+}
+.checkoutModalContent {
+  position: relative;
+  bottom: 40px;
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  line-height: normal;
+}
+.infoSection {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  text-align: left;
+  padding-left: 40px;
+  font-size: 13px;
+  font-weight: 900;
+  padding-right: 40px;
+}
+.t {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 13px;
+  font-weight: 700;
+}
+.info,
+.ad {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 13px;
+  font-weight: 400;
+}
+.ad {
+  position: relative;
+  bottom: 15px;
+}
+.payBtn {
+  cursor: pointer;
+  position: relative;
+  bottom: 90px;
+  left: 180px;
+  color: #333d4b;
+  border: none;
+  font-family: "Pretendard Variable";
+  font-size: 13px;
+  font-weight: 800;
+  width: 80px;
+  height: 30px;
+  border-radius: 40px;
+  background: var(--y, linear-gradient(180deg, #fff9e4 0%, #ffda57 100%));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.price {
+  width: 430px;
+  height: 120px;
+  border-top: #333d4b solid 3px;
+  position: relative;
+  left: 40px;
+  bottom: 20px;
+  text-align: right;
+}
+.pTitle {
+  position: relative;
+  bottom: 5px;
+}
+.totalPrice {
+  position: relative;
+  bottom: 12px;
+}
+.pTitle,
+.totalPrice {
+  color: #333d4b;
+  text-align: right;
+  font-family: "Pretendard Variable";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.payment {
+  position: relative;
+  bottom: 90px;
+  z-index: 2;
+}
+.agreement {
+  position: relative;
+  bottom: 28px;
+}
+.totalPrice {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  font-weight: 800;
+}

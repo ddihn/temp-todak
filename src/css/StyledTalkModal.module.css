@@ -1,0 +1,191 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.innerContainer {
+  position: relative;
+
+  width: 70%;
+  height: 200px;
+  left: 50%;
+  bottom: 300%;
+  transform: translateX(-50%) translateY(50%);
+}
+.chatting {
+  width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  position: relative;
+}
+.quest {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  padding: 20px 25px;
+  width: auto;
+  height: auto;
+  max-height: 78px;
+  border-radius: 40px 40px 40px 0px;
+  background: linear-gradient(0deg, #ebebeb 0%, #fff 48%);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #6f6f6f;
+  font-family: "Pretendard Variable";
+  font-size: 36px;
+  font-weight: 400;
+  transition: transform 0.5s ease-out;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  margin-bottom: 5%;
+}
+
+.questShift {
+  transform: translateY(-100px);
+}
+
+.quest.expanded {
+  height: auto;
+  max-height: none;
+}
+
+.answerWp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 60px;
+  width: 1103px;
+  height: 114px;
+  background: linear-gradient(180deg, #f0ffc8 0%, #cce685 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.answerBox,
+.answerBox:focus {
+  border-radius: 60px;
+  background: linear-gradient(0deg, #ebebeb 0%, #fff 48%);
+  height: 77px;
+  border: none;
+  align-items: center;
+  position: relative;
+  right: 10px;
+  top: 2px;
+  width: 960px;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 25px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.answerBox::placeholder {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.submitted::placeholder {
+  color: rgba(111, 111, 111, 0.65);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.submit {
+  position: relative;
+  left: 10px;
+  top: 3px;
+  cursor: pointer;
+}
+
+.submit img {
+  filter: grayscale(100%);
+}
+
+.chatBox {
+  opacity: 0;
+  position: absolute;
+  bottom: 90%;
+  right: 0%;
+  animation: slideIn 0.5s ease-out forwards;
+  text-align: right;
+  margin-left: 36%;
+  padding: 20px 22px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+  max-width: 90%;
+  border-radius: 40px 40px 0px 40px;
+  background: linear-gradient(180deg, #f0ffc8 0%, #cce685 100%);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 7px 5px 0px rgba(0, 0, 0, 0.25);
+  word-wrap: break-word;
+  max-height: 300px;
+  overflow-y: hidden;
+}
+
+.toast {
+  width: auto;
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}

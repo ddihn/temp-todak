@@ -1,0 +1,182 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-bottom: 325px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.top {
+  position: relative;
+  top: 70px;
+}
+.deliTitle,
+.boxImg {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+.title {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 700;
+  margin-right: 111px;
+  min-width: 110px;
+}
+.wp {
+  position: relative;
+  top: 40px;
+}
+.optionWp,
+.trWp,
+.alWp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 75px;
+}
+.explain {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  position: relative;
+  top: 25px;
+}
+.optionWp img,
+.trWp img,
+.alWp img {
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+.radioLabel img {
+  display: block;
+  position: relative;
+  right: 20px;
+  margin-bottom: 20px;
+}
+.radioWp,
+.radioLabel {
+  display: block;
+  align-items: center;
+  gap: 25px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  top: 36px;
+}
+.trImg {
+  position: relative;
+  right: 70px;
+}
+.tWp {
+  position: relative;
+  left: 45px;
+}
+.albumImg {
+  transform: translateX(-50px);
+  margin-bottom: 20px;
+}
+.radioLabel {
+  margin-bottom: 30px;
+}
+.radioLabel input {
+  margin-right: 20px;
+}
+.nextBtn {
+  position: absolute;
+  padding-left: 30px;
+  top: 60%;
+  right: 10%;
+  width: 90px;
+  height: 45px;
+  padding: 12px 15px;
+  text-align: center;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #8eb200 0%, #3d4c00 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  color: #fff;
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.totalWp {
+  width: 100%;
+  background: rgba(255, 218, 87, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.selectedItems {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+.totalTitle {
+  position: absolute;
+  top: 10%;
+  right: 18%;
+  color: var(--, #3d4c00);
+  text-align: right;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.include {
+  position: absolute;
+  right: 26.5%;
+  top: 30%;
+}
+
+.totalPrice {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  position: absolute;
+  right: 18%;
+  top: 26%;
+}

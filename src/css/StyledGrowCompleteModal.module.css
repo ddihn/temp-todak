@@ -1,0 +1,78 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.container {
+  animation: fadeIn 1s ease-in-out;
+  position: fixed;
+  top: 3%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  text-align: center;
+  align-items: center;
+  width: 934px;
+  height: 700px;
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient(0deg, #f9f9c8 0%, #ffffeb 48%);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.growImg {
+  margin-top: 8%;
+}
+.completeMessage {
+  margin-top: 5%;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 40px;
+  font-weight: 700;
+}
+.completeContent {
+  margin-top: 25px;
+  line-height: 1.8;
+  color: #3d4c00;
+  text-align: center;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.no,
+.yes {
+  cursor: pointer;
+  float: left;
+  position: absolute;
+  left: 30%;
+  top: 82%;
+  text-align: center;
+  color: #3d4c00;
+  padding-top: 15px;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 800;
+  width: 143px;
+  height: 38px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #fff9e4 0%, #ffda57 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.yes {
+  left: 56%;
+}

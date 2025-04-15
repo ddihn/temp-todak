@@ -1,0 +1,314 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffed;
+}
+.conImg {
+  width: 100vw;
+  height: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.innerContainer {
+  display: flex;
+  position: relative;
+  height: 1200px;
+  overflow: hidden;
+}
+.plantTreeWp,
+.plantTreeWp2 {
+  width: 800px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 35%;
+}
+
+.ptTitle {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 5%;
+}
+
+.ptImg {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 8%;
+}
+
+.step {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 115px;
+  height: 30px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #f0ffc8 0%, #cce685 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.treeNameWp,
+.callNameWp,
+.selectFlowerWp,
+.growTimeWp {
+  position: relative;
+  bottom: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20%;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.treeNameWp,
+.callNameWp {
+  max-width: 1000px;
+  margin-left: 4.5%;
+}
+
+.treeTitle,
+.callTitle,
+.flowerTitle,
+.growTitle {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 1.8rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  margin-left: 4%;
+}
+
+.treeNameInput,
+.callNameInput {
+  flex: 2;
+  background-color: transparent;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid #3d4c00;
+  margin-left: 4%;
+}
+
+.callNameInput,
+.callNameInput::placeholder,
+.treeNameInput,
+.treeNameInput::placeholder {
+  outline: none;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.nextBtn,
+.nextBtn2 {
+  width: 150px;
+  height: 38px;
+  color: #fff;
+  font-family: "Pretendard Variable";
+  padding: 15px 25px;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #8eb200 0%, #3d4c00 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  transform: translate(100%, 20%);
+  z-index: 100;
+}
+
+.line {
+  position: relative;
+  top: 150px;
+  float: auto;
+  margin-right: 84.5%;
+  z-index: 0;
+}
+.line2 {
+  position: relative;
+  top: 100px;
+  float: auto;
+  z-index: 0;
+  margin-right: 85%;
+}
+
+/* step2 css */
+.selectFlowerWp,
+.growTimeWp {
+  bottom: 400px;
+}
+
+.sFNotice,
+.gTNotice {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 20%;
+}
+
+.gTNotice {
+  margin-left: 12%;
+  margin-top: 40px;
+}
+li {
+  width: 550px;
+  text-indent: -20px;
+}
+
+.stepTwo3,
+.stepTwo4 {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  margin-left: 5%;
+}
+.flowerTitle,
+.stepTwo3 {
+  margin-bottom: 10%;
+}
+.flowerWp {
+  position: relative;
+  top: 30px;
+  right: 5%;
+}
+
+.flowerContainer {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+
+.explainHyd,
+.explainLily,
+.explainZin {
+  display: none;
+  right: -140%;
+}
+
+.flowerContainer:hover .explainLily,
+.flowerContainer:hover .explainZin,
+.flowerContainer:hover .explainHyd {
+  display: block;
+}
+
+.zinnia,
+.hydrangea,
+.lily {
+  position: absolute;
+  left: 44%;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 600;
+}
+.zinnia {
+  float: left;
+  left: 38%;
+}
+.flo {
+  margin-left: 15px;
+}
+
+.explainLily,
+.explainHyd,
+.explainZin {
+  position: absolute;
+  margin-right: 20%;
+  top: 140%;
+  width: 300px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.radioWp {
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  top: 20px;
+  right: 25px;
+}
+.blurred {
+  opacity: 45%;
+}
+
+[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 2px #3d4c00;
+  border: 4px solid #fcfcea;
+  border-radius: 50%;
+  background-color: #fcfcea;
+}
+
+[type="radio"]:checked {
+  box-shadow: 0 0 0 2px #3d4c00;
+  border: 4px solid fcfcea;
+  background-color: #3d4c00;
+}
+
+.period {
+  margin-left: 3%;
+  margin-right: 15%;
+}
+
+.customDateInput {
+  position: absolute;
+  left: 75%;
+  bottom: -26px;
+  display: inline-block;
+}
+
+.customDateInput input[type="date"] {
+  position: relative;
+  left: 50%;
+  color: #3d4c00;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Pretendard Variable";
+  padding: 5px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid #3d4c00;
+}

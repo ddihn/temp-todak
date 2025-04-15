@@ -1,0 +1,106 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.65);
+    z-index: 99;
+  }
+  
+  .container {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 60vw;
+    height: 35rem;
+    flex-shrink: 0;
+    border-radius: 50px;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: url('../../public/img/DonationCertificate.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25rem;
+    height: 35rem;
+    flex-shrink: 0;
+  }
+  
+  .title {
+    color: #2b2b2b;
+    font-family: MuseumClassic;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  .name {
+    color: #2b2b2b;
+    font-family: MuseumClassic;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-left: 12rem;
+  }
+  
+  .content {
+    color: #2b2b2b;
+    text-align: center;
+    font-family: "Pretendard Variable";
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10vw;
+  }
+  
+  .goLoginBtn {
+    width: 8rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: linear-gradient(180deg, #fff9e4 0%, #ffda57 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .btnp {
+    color: #3d4c00;
+    font-family: "Pretendard Variable";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+  

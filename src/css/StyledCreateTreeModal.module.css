@@ -1,0 +1,56 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.container {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 934px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 50px;
+  background: linear-gradient(0deg, #f9f9c8 0%, #ffffeb 48%);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.noTree {
+  font-size: 40px;
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+.content {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+.lastLine {
+  font-weight: 600;
+}
+.closeBtn {
+  position: absolute;
+  right: 5%;
+  top: 8%;
+}
+.yes,
+.no {
+  cursor: pointer;
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  padding-top: 10px;
+  width: 150px;
+  height: 45px;
+  border-radius: 40px;
+  background: var(--y, linear-gradient(180deg, #fff9e4 0%, #ffda57 100%));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.no {
+  left: 60%;
+}

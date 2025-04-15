@@ -1,0 +1,120 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 130vh;
+  animation: fadeIn 1s ease-in-out;
+}
+.containerBg {
+  position: absolute;
+  z-index: -1;
+}
+.contentContainer {
+  position: absolute;
+  width: 80%;
+  max-width: 1300px;
+  max-height: 700px;
+  top: 35%;
+  left: auto;
+  right: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wreathList {
+  display: flex;
+  margin-bottom: 30px;
+}
+.logo {
+  position: absolute;
+  top: 12%;
+}
+.latest {
+  min-width: 700px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 38px;
+  font-weight: 800;
+  position: absolute;
+  top: 25%;
+  left: 14%;
+}
+.point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #627b00;
+}
+.fImg {
+  width: 34px;
+  height: 25px;
+}
+.memorialHall {
+  width: 335px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+.priceWp {
+  display: flex;
+  margin-left: 72px;
+}
+.price {
+  width: 250px;
+  height: 40px;
+  color: #627b00;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.dateWp {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  margin-left: 130px;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.time {
+  position: relative;
+  left: 15px;
+}
+.contentContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contentContainer::-webkit-scrollbar-track {
+  background: rgba(98, 123, 0, 0.45);
+  border-radius: 10px;
+}
+
+.contentContainer::-webkit-scrollbar-thumb {
+  background: #627b00;
+  border-radius: 20px;
+}
+
+.contentContainer::-webkit-scrollbar-thumb:hover {
+  background: #627b00;
+}

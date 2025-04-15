@@ -1,0 +1,300 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.albumWp {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.albumImg {
+  width: 1200px;
+  height: 700px;
+}
+.albumBg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  position: absolute;
+}
+.com {
+  margin-bottom: 3px;
+}
+/*img1 디자인 css*/
+.img1 {
+  top: 14%;
+  left: 8%;
+}
+.img1 > .defaultImg {
+  position: relative;
+  right: 340px;
+  bottom: 70px;
+}
+.img1 > .comWp {
+  position: relative;
+  bottom: 205px;
+  right: 340px;
+  color: #2b2b2b;
+  text-align: right;
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rightB,
+.leftB {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: rgba(196, 119, 86, 0.85) transparent transparent transparent;
+}
+
+.leftB {
+  bottom: 140px;
+  right: 5px;
+  border-width: 70px 70px 0 0;
+  transform: rotate(-90deg);
+}
+
+.rightB {
+  bottom: 254px;
+  left: 300px;
+  border-width: 70px 0 0 70px;
+  transform: rotate(0deg);
+}
+/*img2 스타일*/
+.img2 {
+  top: 48%;
+  left: 20%;
+}
+.img2 > .defaultImg {
+  position: relative;
+  right: 247px;
+  bottom: 70px;
+}
+.sticker {
+  position: relative;
+  left: 70px;
+  bottom: 418px;
+}
+.mainComWp {
+  position: relative;
+  right: 200px;
+  bottom: 438px;
+}
+.mainCom {
+  position: relative;
+  bottom: 190px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  color: #2b2b2b;
+  font-family: "NanumBuJangNimNunCiCe";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.img2 > .comWp {
+  position: relative;
+  bottom: 200px;
+  right: 250px;
+  color: #2b2b2b;
+  font-size: 14px;
+  text-align: right;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: "Pretendard Variable";
+}
+
+/*img3 스타일*/
+
+.img3 {
+  top: 14%;
+  left: 65%;
+}
+.img3 > .defaultImg {
+  position: relative;
+  left: 20px;
+  bottom: 230px;
+}
+.img3 > .comWp {
+  position: relative;
+  bottom: 250px;
+  right: 80px;
+  color: #2b2b2b;
+  text-align: right;
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-weight: 520;
+}
+.clip {
+  position: relative;
+  bottom: 230px;
+  right: 30px;
+}
+.img3 > .mainComWp {
+  position: relative;
+  top: -225px;
+  left: -60px;
+  width: 289px;
+  height: 60px;
+  color: #2b2b2b;
+  font-family: "NanumBuJangNimNunCiCe";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainCom2 {
+  position: relative;
+  bottom: 80px;
+  left: 20px;
+}
+/*img4 스타일링*/
+.img4 {
+  top: 57%;
+  left: 63%;
+}
+.img4 > .defaultImg {
+  position: relative;
+  left: 20px;
+  bottom: 230px;
+}
+.img4 > .leftB {
+  position: relative;
+  bottom: 305px;
+  border-color: rgba(255, 218, 87, 0.85) transparent transparent transparent;
+}
+.img4 > .rightB {
+  position: relative;
+  bottom: 418px;
+  border-color: rgba(255, 218, 87, 0.85) transparent transparent transparent;
+}
+.img4 > .comWp {
+  position: relative;
+  bottom: 365px;
+  right: 108px;
+  color: #2b2b2b;
+  text-align: right;
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-weight: 520;
+}
+/*페이지네이션 스타일링*/
+.pagination {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.pageNumber {
+  color: #fff;
+  font-family: "Pretendard Variable";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.cur {
+  margin-left: 20px;
+}
+.tot {
+  margin-right: 20px;
+}
+.slash {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.page-number.current {
+  width: 32px;
+  height: 32px;
+  background-color: #3d4c00;
+}
+
+.paginationButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 10px;
+  outline: none;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+}
+
+.paginationVisible {
+  display: flex;
+}
+
+.noPagesMessage {
+  text-align: center;
+  font-size: 18px;
+  color: #2b2b2b;
+  margin-top: 20px;
+}
+
+.noPagesMessage p {
+  margin: 0;
+}
+
+.closeBtn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  left: 535px;
+  bottom: 40px;
+  padding-top: 15px;
+  text-align: center;
+  z-index: 1000;
+  color: #3d4c00;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 150px;
+  height: 45px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #f0ffc8 0%, #cce685 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

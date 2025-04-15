@@ -1,0 +1,101 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/NanumBuJangNimNunCiCe.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+.checkoutModal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 650px;
+  min-height: 600px; /* Adjusted min-height */
+  background: #fff; /* Ensures solid background */
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  font-weight: 700;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+.closeBtn {
+  position: absolute; /* Changed from relative to absolute */
+  top: 20px; /* Adjusted top position */
+  right: 20px; /* Adjusted right position */
+  z-index: 1001; /* Ensures close button is above the modal */
+}
+.title {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Added margin-bottom */
+}
+.checkoutModalContent {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 28px; /* Adjusted font-size */
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px; /* Added padding */
+}
+.infoSection {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  text-align: left;
+  padding-left: 20px; /* Adjusted padding-left */
+  font-size: 20px; /* Adjusted font-size */
+  font-weight: 900;
+  margin-bottom: 20px; /* Added margin-bottom */
+}
+.t {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 20px; /* Adjusted font-size */
+  font-weight: 700;
+}
+.info,
+.ad {
+  color: #333d4b;
+  font-family: "Pretendard Variable";
+  font-size: 20px; /* Adjusted font-size */
+  font-weight: 400;
+}
+.ad {
+  position: relative;
+  bottom: 15px;
+}
+.payBtn {
+  margin-top: 30px;
+  color: #333d4b;
+  border: none;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 800;
+  width: 143px;
+  height: 53px;
+  border-radius: 40px;
+  background: var(--y, linear-gradient(180deg, #fff9e4 0%, #ffda57 100%));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.price {
+  width: 100%; /* Adjusted width */
+  border-top: #333d4b solid 3px;
+  padding-top: 20px; /* Added padding-top */
+  margin-top: 20px; /* Added margin-top */
+  text-align: right;
+}
+
+.pTitle,
+.totalPrice {
+  color: #333d4b;
+  text-align: right;
+  font-family: "Pretendard Variable";
+  font-size: 28px; /* Adjusted font-size */
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.totalPrice {
+  font-size: 38px;
+  margin-top: 10px;
+}
